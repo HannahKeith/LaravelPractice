@@ -17,9 +17,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/hello', function () {
-  $newstring = 'this is data stored in a variable';
+Route::get('/about', 'helloController@about');
 
-  return view('hello', compact('newstring')
-  );
-});
+Route::get('/services', 'helloController@services');
