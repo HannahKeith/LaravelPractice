@@ -13,16 +13,5 @@ class helloController extends Controller
 
   }
 
-  public function services()
-  {
-    $services = [
-      'service1',
-      'service2',
-      'service3'
-    ];
-
-    return view('services', compact('services'));
-
-  }
 
 }
